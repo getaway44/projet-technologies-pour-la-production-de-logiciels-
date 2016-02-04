@@ -1,0 +1,29 @@
+-script python qui permettent d importer les bd 
+	
+	
+
+-script d damin ajouter/supp les tables
+-services res qui lisent les données pour faire des recherches
+-ces donnes seront conso par des pages web javascript
+
+
+notation: 
+-qualité du code
+		-organisation du code (pas tout mettre dans le même fichier (séparation des reponsabilités)
+		-utilisation de module
+-documentation du code
+-test unitaire du code
+		-unitTest
+-compréhension du sujet (oral)
+
+
+
+
+le 03/02: Définir le modèle de la base de données
+		-les tables
+		-les clés primaires/etrangères
+		-les liens entre les tables
+l'idée c'est de sortir un ensemble de scripts sql qui vont pouvoir faire des create tables
+on peut se servir de SQLITE (module python)
+ou MYSQL (PhpMyAdmin)
+ou postgreSql
