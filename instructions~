@@ -35,7 +35,7 @@ activityImporter,
 
 activityLineParser (entrée: une ligne du csv return: un objet python qui représente la ligne)--> facilement testabble. test unitaire  les mettre dans un ensemble pour eviter les doublons
 
-eactivityManager(appel la m"éthode insert et donne en parametre la ligne parsée)
+activityManager(appel la m"éthode insert et donne en parametre la ligne parsée)
 
 
 activity Parser, activityManager en boucle tant que lignes
