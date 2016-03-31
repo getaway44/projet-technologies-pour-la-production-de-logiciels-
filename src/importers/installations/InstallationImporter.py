@@ -4,19 +4,18 @@ from importers.installations.InstallationLine import InstallationLine
 from importers.installations.InstallationLineParser import parseRow
 from importers.installations.InstallationCreator import insertInstallation
 
-def importActivities(filename):
-	importedActivities = []
+def importInstallation(filename):
+	importedInstallations= []
 
 	with open(filename, 'rt') as csvfile:
-		activitiesReader = csv.reader(csvfile, delimiter=',', quotechar='"')
-		for row in activitiesReader:
+		installationsReader = csv.reader(csvfile, delimiter=',', quotechar='"')
+		for row in installationsReader:
 			try:
-				activityLine = parseRow(row)
-				if activityLine.code not in importedActivities:
-					insertActivity(activityLine)
-					importedActivities.append(activityLine.code)
-					# print(activityLine)
+				InstallationLine = parseRow(row)
+				if InstallationLine.numInstall not in importedInstallations:
+					insertInstallation(InstallationLine)
+					importedInstallations.append(InstallationLine.numInstall)
 			except ValueError:
-				print("Problem with row {} : {}".format(activitiesReader.line_num, ','.join(row)))
+				print("Problem with row {} : {}".format(installationsReader.line_num, ','.join(row)))
 
 	csvfile.close()

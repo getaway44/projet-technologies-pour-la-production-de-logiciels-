@@ -1,0 +1,1 @@
+seul les fichiers dans le dossier activities sont commentés car nous avons considéré que seul les noms et nombres de variables changeaient pour les fichiers du dossier equipements et installations
